@@ -1,6 +1,6 @@
 {
-  "name": "react-tic-tac-toe",
   "homepage": "https://sak03.github.io/react-tictactoe",
+  "name": "react-tic-tac-toe",
   "version": "0.1.0",
   "private": true,
   "dependencies": {

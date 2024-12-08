@@ -66,6 +66,15 @@ const HomePage = () => {
     setWinnerIndexs(null);
   };
 
+  const restartGame = ()=>{
+    setBoard(Array(9).fill(null));
+    setIsXNext(true);
+    setWinner(null);
+    setWinnerIndexs(null);
+    setWinnerXcount(0);
+    setWinner0count(0);
+  }
+
   return (
     <>
       <h1>Tic-Tac-Toe</h1>
@@ -102,9 +111,14 @@ const HomePage = () => {
             );
           })}
         </div>
-        <button className="reset-button" onClick={resetGame}>
-          Reset Game
+        <div className="button-box">
+        <button className="restart-button" onClick={restartGame}>
+          Restart
         </button>
+          <button className="reset-button" onClick={resetGame}>
+            Reset
+          </button>
+        </div>
       </div>
     </>
   );

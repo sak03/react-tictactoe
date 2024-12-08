@@ -77,7 +77,6 @@ const HomePage = () => {
 
   return (
     <>
-      <h1>Tic-Tac-Toe</h1>
       <div className="player-points">
         <span>Player X: {winnerXcount}</span>
         <span>Player O: {winner0count}</span>
